@@ -575,13 +575,13 @@ const RESOURCES = {"assets/AssetManifest.bin": "d24c3bb06ae0db1f3a3272954aaa8179
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "6fc7c31762ea3a52be72ce5928d395eb",
-"/": "6fc7c31762ea3a52be72ce5928d395eb",
+"index.html": "dc874a64293f492a7f07608c852eba7c",
+"/": "dc874a64293f492a7f07608c852eba7c",
 "logo.png": "fbde50eb2b3a071a5b4e61efa2d2a821",
 "main.dart.js": "b7b4dc310fdaee6ab8bb0e7f74cddd85",
 "manifest.json": "1fd8c3a9f36639f38fe0ea0dc72b6ddc",
-"robots.txt": "19ea929dc168345effff2164df78402f",
-"sitemap.xml": "bec3a452df99ff3018b7a38c334f3f93",
+"robots.txt": "367b8d830cd5111c8503f63367c26f17",
+"sitemap.xml": "dee4bf749f7bbd2a52c5d1eba19ae4c1",
 "splash.json": "3fdb9a840836b0d0ebb3bcd21d618e1a",
 "version.json": "04f7bd6b495c63de801430f4137f4294"};
 // The application shell files that are downloaded before a service worker can
