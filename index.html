@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-US"><head>
+<!DOCTYPE html>
+<html>
+<head>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -16,76 +18,52 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  
-  <!-- Manual tags -->
-  <meta name="description" content="A responsive landing page template for flutter. Perfect for showcasing your product or service with a clean lead-in, FAQs, pricing, and key features.">
-  <meta name="keywords" content="Flutter, Landing Page, Responsive, Multi-Platform, Template, Flutter Landing Page, Flutter Template">
-  <meta name="author" content="Louis Wiwawan">
-  <meta property="og:title" content="Flutter Landing Page">
-  <meta property="og:description" content="A responsive landing page template for flutter. Perfect for showcasing your product or service with a clean lead-in, FAQs, pricing, and key features.">
-  <meta property="og:image" content="https://user-images.githubusercontent.com/45191605/282370539-0cd5e94c-1a31-447a-b7c4-fdba6a58f0f9.png">
-  <meta property="og:url" content="https://nialixus-landing-page.web.app/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Flutter Landing Page">
-  <meta name="twitter:description" content="A responsive landing page template for flutter. Perfect for showcasing your product or service with a clean lead-in, FAQs, pricing, and key features.">
-  <meta name="twitter:image" content="https://user-images.githubusercontent.com/45191605/282370539-0cd5e94c-1a31-447a-b7c4-fdba6a58f0f9.png">
-  <meta name="twitter:site" content="@wawan_ariwijaya">
-  <meta name="google-site-verification" content="ekjwA00Ef5QjgPqrvAU9qyzZI2asdYt4VWhIcGKO-JE">
-  <meta name="yandex-verification" content="be06873aee08833c">
-  <meta http-equiv="content-language" content="en-US">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
-  <link rel="nofollow" href="https://nialixus-landing-page.web.app/robots.txt">
-  <style>
-    .loader {
-      border: 4px solid transparent; /* Transparent border to create space for the loader */
-      border-top: 4px solid #fff; /* Top border (appears as the loader) */
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-      position: absolute;
-      top: 50%; /* Center the loader vertically */
-      left: 50%; /* Center the loader horizontally */
-      transform: translate(-50%, -50%); /* Center the loader precisely */
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    body {
-      background-color: #0D47A1; /* Set the background color here */
-      margin: 0; /* Reset default margin */
-      height: 100vh; /* Ensure full viewport height */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-  </style>
+  <meta name="description" content="Your personal doctor">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Flutter Landing Page">
+  <meta name="apple-mobile-web-app-title" content="CareMate">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="logo.png"/>
 
-  <title>Flutter Landing Page</title>
+  <title>CareMate</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Style for the splash screen */
+    .splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff; /* Change background color as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .splash-screen img {
+      max-width: 300px; /* Adjust size as needed */
+    }
+  </style>
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3744034485";
+    const serviceWorkerVersion = "1716813945";
   </script>
   <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer=""></script>
-
+  <script src="flutter.js" defer></script>
 </head>
 <body>
-  <h1 style="color: rgba(255, 0, 0, 0)">Flutter Landing Page</h1>
-  <div class="loader"></div>
+  <!-- Splash screen -->
+  <div class="splash-screen">
+    <img src="logo.png" alt="Splash Screen">
+    <!-- Replace 'splash_screen_image.png' with the path to your splash screen image -->
+  </div>
+
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -96,18 +74,12 @@
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
             appRunner.runApp();
+            // Hide splash screen when the app is loaded
+            document.querySelector('.splash-screen').style.display = 'none';
           });
         }
       });
     });
   </script>
-
-
-
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
