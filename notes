@@ -2,7 +2,7 @@
 
 git init
 git add .
-git commit -m "website version 2"
+git commit -m "website version 2 error solved added twitter"
 git branch -M main
 git remote add origin https://github.com/alokjha2/carematelive.git
 git push -u origin main
